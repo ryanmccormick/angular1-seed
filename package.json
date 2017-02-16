@@ -1,13 +1,18 @@
 {
   "name": "angular1-seed",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "./server/bin/www",
   "scripts": {
     "start": "./server/bin/www",
-    "test": "karma start"
+    "test": "karma start",
+    "dev": "gulp serve:dev",
+    "build": "gulp",
+    "build:prod": "gulp --production",
+    "serve": "gulp && npm start",
+    "serve:prod": "gulp --production && npm start"
   },
-  "author": "",
+  "author": "Ryan McCormick",
   "license": "ISC",
   "devDependencies": {
     "asset-builder": "^1.1.0",
@@ -53,6 +58,7 @@
     "lodash": "^4.17.4",
     "merge-stream": "^1.0.1",
     "minimist": "^1.2.0",
+    "phantomjs": "https://registry.npmjs.org/phantomjs/-/phantomjs-2.1.7.tgz",
     "run-sequence": "^1.2.2",
     "traverse": "^0.6.6",
     "wiredep": "^4.0.0"

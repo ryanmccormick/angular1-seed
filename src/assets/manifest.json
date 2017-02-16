@@ -1,0 +1,47 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "assets/scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "assets/styles/main.scss"
+      ],
+      "main": true
+    },
+    "app.js": {
+      "files": [
+        "app/app.module.js",
+        "app/**/*.module.js",
+        "app/**/*.config.js",
+        "app/**/*.constants.js",
+        "app/**/*.provider.js",
+        "app/**/*.router.js",
+        "app/**/*.controller.js",
+        "app/**/*.service.js",
+        "app/**/*.dataservice.js",
+        "app/**/*.directive.js",
+        "app/**/*.filter.js",
+        "../.tmp/templates.js"
+      ]
+    },
+    "fonts": {
+      "files": ["assets/fonts/**/*"]
+    },
+    "images": {
+      "files": ["assets/images/**/*"]
+    }
+  },
+  "paths": {
+    "source": "src/",
+    "dist": "dist/",
+    "tmp":".tmp/"
+  },
+  "config": {
+    "devUrl": "http://localhost/",
+    "spaSource": "./src/index.html"
+  }
+}
