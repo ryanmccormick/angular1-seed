@@ -1,0 +1,9 @@
+# End files with new line char
+# for safe minification
+end_of_line = lf
+insert_final_newline = true
+
+# Indentation for all javascript files
+[*.js]
+indent_style = space
+indent_size = 2
