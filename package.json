@@ -7,5 +7,72 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "asset-builder": "^1.1.0",
+    "browser-sync": "^2.18.8",
+    "cssnano": "^3.10.0",
+    "del": "^2.2.2",
+    "event-stream": "^3.3.4",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-changed": "^1.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^1.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^3.0.1",
+    "gulp-flatten": "^0.3.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-inject": "^4.2.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.0",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.1.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^2.0.1",
+    "http-proxy-middleware": "^0.17.3",
+    "http-server": "^0.9.0",
+    "imagemin-pngcrush": "^5.0.0",
+    "jasmine-core": "^2.5.2",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "karma": "^1.4.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "lazypipe": "^1.0.1",
+    "lodash": "^4.17.4",
+    "merge-stream": "^1.0.1",
+    "minimist": "^1.2.0",
+    "run-sequence": "^1.2.2",
+    "traverse": "^0.6.6",
+    "wiredep": "^4.0.0"
+  },
+  "dependencies": {
+    "clone": "^2.1.0",
+    "express": "^4.14.1",
+    "request": "^2.79.0"
+  },
+  "engines": {
+    "node": ">=4.4.5"
+  },
+  "eslintConfig": {
+    "env": {
+        "node": true,
+        "browser": true
+    },
+    "rules": {
+        "quotes": [
+            2,
+            "single"
+        ]
+    }
+  }
 }
