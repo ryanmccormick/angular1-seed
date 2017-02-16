@@ -2,9 +2,10 @@
   "name": "angular1-seed",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./server/bin/www",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./server/bin/www",
+    "test": "karma start"
   },
   "author": "",
   "license": "ISC",
@@ -45,6 +46,7 @@
     "jshint-stylish": "^2.2.1",
     "karma": "^1.4.1",
     "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.2",
     "lazypipe": "^1.0.1",
@@ -65,14 +67,14 @@
   },
   "eslintConfig": {
     "env": {
-        "node": true,
-        "browser": true
+      "node": true,
+      "browser": true
     },
     "rules": {
-        "quotes": [
-            2,
-            "single"
-        ]
+      "quotes": [
+        2,
+        "single"
+      ]
     }
   }
 }

@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+
+var server = require('./../../server');
+var splash = require('./../lib/server_banner')();
+var ipaddress = "127.0.0.1";
+var port = 5000;
+var node_env = process.env.NODE_ENV || 'local';
+
+server.listen(port, ipaddress, function() {
+	clear();
+	var splashScreen = [
+        splash,
+        '\n+------------------------------------',
+        '| Environment: ' + node_env,
+        '| Listening on port: ' + port,
+        '+------------------------------------'
+    ];
+    console.log(splashScreen.join('\n'));
+});
+
+
+function clear() {
+    var stdout = "";
+
+    if (process.platform.indexOf("win") != 0) {
+        stdout += "\033[2J";
+    } else {
+        var lines = process.stdout.getWindowSize()[1];
+
+        for (var i=0; i<lines; i++) {
+            stdout += "\r\n";
+        }
+    }
+
+    // Reset cursur
+    stdout += "\033[0f";
+
+    process.stdout.write(stdout);
+}
