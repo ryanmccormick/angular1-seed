@@ -23,7 +23,7 @@
       });
 
       it('should map state home to url /home', function() {
-        expect($state.href('app.home', {})).toEqual('#/home');
+        expect($state.href('app.home', {})).toEqual('#!/home');
       });
 
       it('should map state route to view', function() {
