@@ -1,0 +1,17 @@
+{
+  "name": "angular1-seed",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ryan McCormick <ryan@itjobsguy.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
