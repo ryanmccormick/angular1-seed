@@ -480,7 +480,8 @@ gulp.task('dev-images', function() {
 gulp.task('dev-watch', function() {
   var routes = {
     '/bower_components': 'bower_components',
-    '/app': 'src/app'
+    '/app': 'src/app',
+    '/assets/scripts': 'src/assets/scripts'
   };
   var baseDir = '.tmp';
 
@@ -489,14 +490,11 @@ gulp.task('dev-watch', function() {
     routes: routes
   };
 
-  /*
-  server.middleware = proxyMiddleware('/api/v1/yourapp', {
+  /*server.middleware = proxyMiddleware('/api/v1/yourapp', {
     target: 'http://url-to-proxy-to.example.com',  
     changeOrigin: true
-  });
-  */
+  });*/
   
-
   browserSync.init({
     server: server
   });
